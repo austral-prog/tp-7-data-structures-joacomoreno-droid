@@ -35,7 +35,7 @@ def add_items(inventario, items):
     Returns:
         El inventario actualizado
     """
-        for item in items:
+    for item in items:
         if item in inventario:
             inventario[item] += 1
         else:
@@ -116,7 +116,7 @@ def find_max_value(diccionario):
     Ejemplo:
         find_max_value({'John': 85, 'Emma': 92, 'Sophia': 78}) -> 'Emma'
     """
-        if not diccionario:
+    if not diccionario:
         return ""
 
     nombre_maximo = ""
