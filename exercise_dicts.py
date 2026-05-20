@@ -76,12 +76,9 @@ def remove_item(inventario, item):
     Returns:
         El inventario actualizado (o sin cambios si el item no existe)
     """
-    resultado = []
-    for item, cantidad in inventario.items():
-        if cantidad > 0:
-            resultado.append((item, cantidad))
-    return resultado
-
+    if item in inventario:
+        del inventario[item]
+    return inventario
 
 def list_inventory(inventario):
     """
